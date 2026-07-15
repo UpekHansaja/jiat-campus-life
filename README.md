@@ -1,6 +1,6 @@
 # Splatter Paintball Adventure Hub
 
-A modern and minimal landing page for university adventure activities. This project presents a clean one-screen experience with large action buttons that guide visitors to different adventure-themed pages.
+This website simply presents a clean one-screen experience with large action buttons that guide visitors to different adventure-themed pages.
 
 ## Overview
 
