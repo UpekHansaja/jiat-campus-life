@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Adventure Hub</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #07111f;
+        --panel: rgba(255, 255, 255, 0.1);
+        --text: #f6f7fb;
+        --accent: #ff7a1a;
+        --accent-2: #4cc9f0;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        background: linear-gradient(135deg, var(--bg), #14213d);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .hero {
+        width: min(1100px, 100%);
+        background: var(--panel);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: var(--accent-2);
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(1.8rem, 3vw, 2.7rem);
+      }
+
+      .subtitle {
+        margin: 0 0 28px;
+        font-size: 1rem;
+        color: #dbe4f0;
+      }
+
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 130px;
+        padding: 18px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 18px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn:hover,
+      .btn:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 30px rgba(0,0,0,0.3);
+      }
+
+      @media (max-width: 900px) {
+        .button-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .hero { padding: 24px; }
+        .button-grid { grid-template-columns: 1fr; }
+        .btn { min-height: 110px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <p class="eyebrow">University activities</p>
+      <h1>Choose your adventure</h1>
+      <p class="subtitle">A simple 100vh experience with four big action buttons for our campus activities.</p>
+
+      <div class="button-grid">
+        <a class="btn" href="Ambush/ambush-adventure.html">Ambush Adventure</a>
+        <a class="btn" href="Ambush/paintball-challenge.html">Paintball Challenge</a>
+        <a class="btn" href="NightCamp/jungle_trekking_night_camp.html">Jungle Trekking & Night Camp</a>
+        <a class="btn" href="GravelKarting/gravel-karting.html">Gravel Karting</a>
+      </div>
+    </main>
+  </body>
+</html>
